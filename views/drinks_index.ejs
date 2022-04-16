@@ -8,16 +8,25 @@
     <title>GitPub</title>
 </head>
 <body>
-    <h1>Welcome to gitPub</h1>
-     <%=drinks[0].name %>  </br>
-     <%=drinks[0].price %> </br>
-     <img src="<%=drinks[0].image; %>" alt=""> </br>
     <style type="text/css">
         body{
             color:#4D4C7D;
             background-color:#06113C ;
         }
     </style>
-    
+
+    <h1>Welcome to gitPub</h1>
+
+    <ul>
+    <!-- drink is the index and drinks is the array -->
+        <%for(let drink in drinks) { %>
+        <!-- <li> (drinks[drink].name.chartAt(0).toUpperCase() + drinks[drink].name.slice(1))</li>   -->
+        <li> <%=drinks[drink].name.toUpperCase()%></li>
+        <li><%=drinks[drink].price %> </li> 
+        <li><img src="<%=drinks[drink].image; %>" alt=""> </li>
+        <% } %> 
+    </ul> 
+ 
+
 </body>
 </html>

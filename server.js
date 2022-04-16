@@ -15,8 +15,9 @@ app.get("/",(req, res)=>{
 })
 
 app.get("/drinks",(req, res)=>{
+// i use the varialbe drinks on my index.ejs file
+    res.render('drinks_index.ejs',{drinks})
 
-    res.render('drinks_index.ejs')
 })
 
 

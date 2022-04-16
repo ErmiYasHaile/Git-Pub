@@ -21,12 +21,11 @@
     <!-- drink is the index and drinks is the array -->
         <%for(let drink in drinks) { %>
         <!-- <li> (drinks[drink].name.chartAt(0).toUpperCase() + drinks[drink].name.slice(1))</li>   -->
-        <li> <%=drinks[drink].name.toUpperCase()%></li>
-        <li><%=drinks[drink].price %> </li> 
-        <li><img src="<%=drinks[drink].image; %>" alt=""> </li>
+        <li> <a href="/drinks/<%=drink%>"><%=drinks[drink].name.toUpperCase()%></a></li>
+        
         <% } %> 
     </ul> 
- 
-
+    <!-- Linking drinks_index.ejsto drinks_show.ejs -->
+    
 </body>
 </html>

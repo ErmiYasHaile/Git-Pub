@@ -10,6 +10,8 @@ app.get("/",(req, res)=>{
     res.send("Welcome to the Gitpub App!")
 })
 
+
+
 app.get("/drinks",(req, res)=>{
 // i use the varialbe drinks on my index.ejs file
     res.render('drinks_index.ejs',{drinks})
@@ -17,7 +19,9 @@ app.get("/drinks",(req, res)=>{
 })
 //Setting up your show route
 app.get("/drinks/:id",(req, res)=>{
-    res.send(req.params.id)
+    // res.send(req.params.id)
+    // mydrink is a file holder like the name, price and image
+    res.render('drinks_show.ejs',{mydrink: drinks[req.params.id]})
     })
 
 app.listen(port,() => {

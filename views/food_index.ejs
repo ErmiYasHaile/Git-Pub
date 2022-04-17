@@ -7,10 +7,22 @@
     <title>Food list</title>
 </head>
 <body>
+    <style type="text/css">
+        body{
+            color:#4D4C7D;
+            background-color:#06113C ;
+        
+        }
+        img {
+            width: 500px;
+            height: 500px;
+        }
+    </style>
+    <h1>welcome to gitPub</h1>
     <ul>
         
      <%for(let foodmenu in foods) { %>
-    <li> <a href="/foods/<%=foodmenu%>"><%=foods[foodmenu].name.toUpperCase()%></a></li>
+   <li> <a href="/foods/<%=foodmenu%>"><%=foods[foodmenu].name.toUpperCase()%></a></li>
             
     <% } %> 
     </ul> 

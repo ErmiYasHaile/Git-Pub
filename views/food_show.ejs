@@ -7,12 +7,30 @@
     <title>GitPub</title>
 </head>
 <body>
+    <style type="text/css">
+        body{
+            color:#FFEEEE;
+            background-color:#FAFDD6 ;
+        
+        }
+        img {
+            width: 700px;
+            height: 700px;
+        }
+        h1{
+            color: black;
+        }
+        p{
+            font-family: sans-serif;
+            font-size: 20px;
+        }
+    </style>
     <a href="/foods">Back</a>
     <ul>
         <h1>At foo bar</h1>
     <li><%=menu.name.toUpperCase()%></li>
     <li><%=menu.price %> </li> 
-    <li><img src="<%=menu.image.slice(0,-3)+"png"%>" alt=""> </li>
+    <img src="<%=menu.image.slice(0,-3)+"png"%>" alt=""> 
     </ul> 
     
 </body>
